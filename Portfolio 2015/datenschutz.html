@@ -1,0 +1,347 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Projekt</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div id="wrapper">
+		<header id="hd_header">
+			<nav id="nav">
+				<ul class="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a  id="js_move" href="#">JavaScript</a>
+						<ul class="sub_menu">
+							<li><a href="time.html">Die Zeit</a></li>
+							<li><a href="slide.html">Slide</a></li>
+							<li><a href="formular.html">Formular</a></li>
+						</ul>
+					</li>
+					<li><a id="html_move" href="#">HTML5</a>
+						<ul class="sub_menu">
+							<li><a href="mikro.html">Mikrodaten</a></li>
+							<li><a href="dragdrop.html">Drag&amp;Drop</a></li>
+							<li><a href="video.html">Video</a></li>
+						</ul>
+					</li>
+					<li><a id="css_move" href="#">CSS3</a>
+						<ul class="sub_menu">
+							<li><a href="runde.html">Runde</a></li>
+							<li><a href="schatten.html">Schatten</a></li>
+							<li><a href="transform.html">Transform</a></li>
+							<li><a href="farbverlauf.html">Farbverlauf</a></li>
+						</ul>
+					</li>
+					<li>
+						<form name="search" class="suche" action="" method="post" accept-charset="utf-8">
+							<label>Suche:
+								<input type="search" class="feld" name="search_1" id="search" autofocus />
+							</label>
+							<label>
+								<button type="submit"  name="suche" id="suche" value="GO" class="button">GO</button>
+							</label>
+						</form>
+					</li>
+				</ul>
+				<div id="branding">
+					<ul>
+						<li><a class="sitemap" href="#">Sitemap</a></li>
+						<li><a class="contact" href="formular.html">Kontakt</a></li>
+					</ul>
+				</div>
+			</nav>
+			<canvas id="bild" width="1050" height="330">
+				<h1>HTML CSS JAVASCRIPT</h1>
+				<h2>Die aufgehende Sonne</h2>
+			</canvas>		
+		</header>
+   
+		<section id="crumb">
+			<ul id="breadcrumb">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Aktuelle Projekte</a></li>
+			</ul>
+		</section>
+		
+		<main id="role" role="main" class="cf">
+			<section id="sidebar">
+				<header id="Awesome" class="anim750">
+					<div class="reveal circle_wrapper">
+						<figure  class="circle">
+							<img src="image/hammi.png" alt="Hamm Elefant">
+							<figcaption>
+								Das Wahrzeichen von Hamm Elefant 
+							</figcaption>
+						</figure>						
+					</div>
+					<div class="sticky anim750">
+						<div class="front circle_wrapper anim750">
+							<div class="circle anim750"></div>
+						</div>
+					</div>
+					<h6>Berühre Mich!!</h6>
+					<div class="sticky anim750">
+						<div class="back circle_wrapper anim750">
+							<div class="circle anim750"></div>
+						</div>
+					</div>
+				</header>
+				<aside class="sidebar">
+					<article class="side_article">
+						<header class="side_header">
+							<h3>Lebenslauf</h3>
+						</header>
+						<nav class="side_navi">
+							<ul>
+								<li>
+									<a href="lebenslauf1.html">Seite 1</a>
+								</li>
+								<li>
+									<a href="lebenslauf2.html">Seite 2</a>
+								</li>
+								<li>
+									<a href="#">Seite 3</a>
+								</li>
+							</ul>					
+						</nav>
+					</article>
+					<article class="side_article">
+						<header class="side_header">
+							<h3>Wissen & Co</h3>
+						</header>	
+						<nav class="side_navi">
+							<ul>
+								<li>
+									<a href="zeugnis.html">Zeugnise</a>
+								</li>
+								<li>
+									<a href="lebenslauf1.html">Erfahrungen</a>
+								</li>
+							</ul>
+						</nav>
+					</article>
+					<article class="side_article">
+					<header class="side_header">
+							<h3>Projekte</h3>
+						</header>	
+						<nav class="side_navi">
+							<ul>
+								<li>
+									<a href="aktuell.html">Aktuelles</a>
+								</li>
+								<li>
+									<a href="uebersicht.html">Übersicht</a>
+								</li>
+							</ul>
+						</nav>
+					</article>
+					<article class="side_article">
+						<header class="side_header">	
+							<h3 class="resources">Kontakt</h3>
+						</header>
+						<form action="" onsubmit="return pruefe()" onreset="return confirm('Sind Sie sicher das Sie Löschen wollen')" method="post" name="formular" id="formular" class="commentForm">
+							<fieldset>
+								<legend>Antwort Schreiben</legend>
+								<ol class="clearfix">
+									<li>
+										<label for="firma">Firma:<br>
+											<input type="text" name="firma" id="firma" class="feld" size="29" maxlength="30" />
+										</label>
+									</li>
+									<li>
+										<label for="nachname"> Ansprechpartner:<br> 
+											<input type="text" name="nachname" id="nachname" class="feld" size="29" maxlength="30" />
+										</label>
+									</li>
+									<li>
+										<label for="email">Email Adresse:<br>  
+											<input type="email"  name="email" id="email" class="feld" size="29" />
+										</label>
+									</li>
+									<li>
+										<label for="telefon">Telefon:<br>  
+											<input type="tel"  name="telefon" id="telefon" class="feld" size="29" />
+										</label>
+									</li>
+									<li>
+										<label for="check">Antwort:<br> 
+											<textarea name="check" id="check" class="feld" placeholder=" Bitte Text Eingeben" cols="28" rows="4"></textarea>
+										</label>
+									</li>
+									<li class="senden_berreich">
+										<button type="reset" name="loeschen" id="loeschen" class="button" value="Löschen">Löschen</button>
+									</li>
+									<li class="senden_berreich">
+										<button type="submit" name="senden" id="senden" class="button" value="Betsellen">Abschicken</button>
+									</li>
+								</ol>
+							</fieldset>
+						</form>
+					</article>
+				</aside>
+			</section>
+			<section id="content">
+				<article class="text" id="leben">
+					<p><strong>Datenschutzerklärung</strong></p><p><strong>Geltungsbereich</strong></p><p>Diese Datenschutzerklärung klärt Nutzer über die Art, 
+					den Umfang und Zwecke der Erhebung und Verwendung personenbezogener Daten durch den verantwortlichen Anbieter 
+					Andreas Borneck, Röttgersbank 41, 01711004070 auf dieser Website (im folgenden “Angebot”) auf.<br />
+					<br />
+					Die rechtlichen Grundlagen des Datenschutzes finden sich im Bundesdatenschutzgesetz (BDSG) und dem Telemediengesetz (TMG).<br />
+					<br />
+					</p><p><strong>Kontaktaufnahme</strong></p><p><span class="sd-muster-content">Bei der Kontaktaufnahme mit dem Anbieter (zum Beispiel per Kontaktformular oder E-Mail) 
+					werden die Angaben des Nutzers zwecks Bearbeitung der Anfrage sowie für den Fall, dass Anschlussfragen entstehen, gespeichert.</span></p>
+					<p><strong>Google Analytics</strong></p><p><span class="sd-muster-content">Dieses Angebot benutzt Google Analytics, einen Webanalysedienst der Google Inc. („Google“). 
+					Google Analytics verwendet sog. „Cookies“, Textdateien, die auf Computer der Nutzer gespeichert werden und die eine Analyse der Benutzung der Website durch sie ermöglichen. 
+					Die durch den Cookie erzeugten Informationen über Benutzung dieser Website durch die Nutzer werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.<br />
+					<br />
+					Im Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite, wird die IP-Adresse der Nutzer von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen 
+					Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort 
+					gekürzt. Die IP-Anonymisierung ist auf dieser Website aktiv. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um die Nutzung der Website durch die Nutzer 
+					auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber 
+					zu erbringen.<br />
+					<br />
+					Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. Die Nutzer können die Speicherung der Cookies durch eine 
+					entsprechende Einstellung Ihrer Browser-Software verhindern; Dieses Angebot weist die Nutzer jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website 
+					vollumfänglich werden nutzen können. Die Nutzer können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an 
+					Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren:  
+					<a href="http://tools.google.com/dlpage/gaoptout?hl=de">http://tools.google.com/dlpage/gaoptout?hl=de</a>.<br />
+					<br />
+					Alternativ zum Browser-Add-On oder innerhalb von Browsern auf mobilen Geräten, <a id="GAOptOut" title="Google Analytics Opt-Out-Cookie setzen" href="javascript:gaOptout()">klicken Sie bitte diesen Link</a>, um die Erfassung durch Google Analytics innerhalb dieser Website zukünftig zu verhindern. Dabei wird ein Opt-Out-Cookie auf Ihrem Gerät abgelegt. Löschen Sie Ihre Cookies, müssen Sie diesen Link erneut klicken.<br />
+					</span></p><p><strong>Widerruf, Änderungen, Berichtigungen und Aktualisierungen</strong></p><p>Der Nutzer hat das Recht, auf Antrag unentgeltlich Auskunft zu erhalten über die personenbezogenen Daten, die über ihn gespeichert wurden. Zusätzlich hat der Nutzer das Recht auf Berichtigung unrichtiger Daten, Sperrung und Löschung seiner personenbezogenen Daten, soweit dem keine gesetzliche Aufbewahrungspflicht entgegensteht.<br />
+					</p>
+				</article>
+			</section>
+		</main>
+		<footer class="footer" id="footer">
+				<div id="left" class="foot_box">
+					<h4 id="foot_over" class="menu_footer">Meine gelesenen Literatueren</h4>
+				</div>
+				<article id="center1" class="foot_box">
+					<div>
+						<h5>HTML 5</h5>
+					</div>
+					<details itemscope class="menu_footer">
+						<summary itemprop="title">Schrödinger lernt HTML5</summary>
+						<ul>
+							<li itemprop="author">Kai Günster</li>
+							<li itemprop="creator">GalileoPress</li>
+							<li itemprop="year">2013</li>
+						</ul>
+					</details>
+					<details itemscope  class="menu_footer">
+						<summary itemprop="title">HTML5 Für Dummies</summary>
+						<ul>
+							<li itemprop="author">Andy Harris</li>
+							<li itemprop="creator">Wiley-Vch Dummies</li>
+							<li itemprop="date">2011</li>
+						</ul>
+					</details>
+					<details itemscope class="menu_footer">
+						<summary itemprop="title">HTML5 Handbuch</summary>
+						<ul>
+							<li itemprop="author">Kai Günster</li>
+							<li itemprop="creator">Franzis Verlag</li>
+							<li itemprop="date">2013</li>
+						</ul>
+					</details>
+					<details itemscope class="menu_footer">
+						<summary itemprop="title">HTML5</summary>
+						<ul>
+							<li itemprop="author">Peter Kröner</li>
+							<li itemprop="creator">professional reference</li>
+							<li itemprop="date">2011</li>
+						</ul>
+					</details>
+				</article>
+				<article id="center2" class="foot_box">
+					<div>
+						<h5>CSS 3</h5>
+					</div>
+					<details itemscope class="menu_footer">
+						<summary itemprop="title">Schrödinger lernt CSS3</summary>
+						<ul>
+							<li itemprop="author">Kai Günster</li>
+							<li itemprop="creator">GalileoPress</li>
+							<li itemprop="date">2013</li>
+						</ul>
+					</details>
+					
+					<details itemscope class="menu_footer">
+						<summary itemprop="title">Fortgeschrittene CSS-Techniken</summary>
+						<ul>
+							<li itemprop="author">Ingo Chao, Corina Rudel </li>
+							<li itemprop="creator">GalileoComputing</li>
+							<li itemprop="date">2011</li>
+						</ul>
+					</details>
+					<details itemscope class="menu_footer">
+						<summary itemprop="title">Reponsive Webdesign</summary>
+						<ul>
+							<li itemprop="author">Kai Laborenz, Andrea Ertel</li>
+							<li itemprop="creator">GalileoComputing</li>
+							<li itemprop="date">2014</li>
+						</ul>
+					</details>
+					<details itemscope class="menu_footer">
+						<summary itemprop="title">Das große Little Boxes-Buch</summary>
+						<ul>
+							<li itemprop="Person">Peter M. Müller </li>
+							<li itemprop="creator">GalileoPress</li>
+							<li itemprop="date">2013</li>
+						</ul>
+					</details>
+					<details itemscope class="menu_footer">
+						<summary itemprop="title">CSS - Das umfassende Handbuch</summary>
+						<ul>
+							<li itemprop="author">Kai Laborenz</li>
+							<li itemprop="creator">GalileoComputing</li>
+							<li itemprop="date">2013</li>
+						</ul>
+					</details>
+				</article>
+				<article id="right" class="foot_box">
+					<div>
+						<h5 class="menu_footer">Über die Seite</h5>
+					</div>
+						<p>Die Seite wurde nur für den Bewerbungszweck Entwickelt und nicht zur Veröffentlichung.
+						Passwort und Daten bitte nicht ohne Absprache mit mir an dritte weiterzugeben.Ich Hoffe es hat ihnen
+						gefallen und das ich bald ihr Team berreichern werden.</p>
+				</article>
+			
+				<section class="copyright">
+					<p>Copyright © 2015 Andy</p>
+					<ul>
+						<li><a href="#">Sitemap</a></li>
+						<li><a href="#">Datenschutz</a></li>
+						<li><a href="#">Kontakt</a></li>
+						<li><a href="#">Impressum</a></li>
+					</ul>		
+				</section>
+			</footer>
+	</div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+		 
+
+       
+    </body>
+</html>
