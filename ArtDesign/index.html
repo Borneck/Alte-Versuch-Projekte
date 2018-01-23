@@ -1,0 +1,155 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		
+		
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <section id="wrapper">
+		<header id="hd_header">
+			<h1 id="branding">Art Design at A.Borneck</h1>
+			<section>
+				<form name="search" class="suche" action="" method="post" accept-charset="utf-8">
+					<label>
+						<button type="submit"  name="suche" id="suche" value="Suche" class="button">Suche</button>
+					</label>
+					<label>
+						<input type="search" class="feld" name="search_1" id="search" autofocus />
+					</label>
+				</form>
+			</section>
+			<nav id="navi">
+				<ul>
+					<li class="nav_01"><a href="index.html">Startseite</a></li>
+					<li class="nav_02"><a href="#">Webseiten</a></li>
+					<li class="nav_03"><a href="#">Über uns</a></li>
+					<li class="nav_04"><a href="#">Kontakt</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main id="role" class="cf">
+			<section id="content" class="border">
+				<h5 id="twitter"><a href="#">Twitter</a></h5>
+				<section>
+					<header id="ueberschrift">
+						<h2>U-Bahn Video</h2>
+					</header>
+					<article class="col1">
+						<video width="450" height="337" controls>
+							<source src="video/u-bahn.mp4" />
+							<source src="video/u-bahn.ogv" />
+								<object width="450" height="337" type="application/x-shockwave-flash" data="swf/flowplayer-3.2.2.swf">
+									<param name="movie" value="swf/flowplayer-3.2.2.swf" />
+									<param name="allowfullscreen" value="true" />
+									<param name="flashhvars" value="config={'clip':{'url':'../video/u-bahn.mp4','autoPlay':false,'autoBuffering':true}}" />
+								</object>
+							<p>Leider unterstütz ihr Browser das Tag nicht</p>
+						</video>
+					</article>
+				</section>
+				<section class="col2">
+					<article id="beschreibung">
+						<header>
+							<h3 class="video">Videos in HTML5</h3>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,diam voluptua.</p>
+						<aside class="auswahl">
+							<ul>
+								<li><a href="#">Video 1</a></li>
+								<li><a href="#">Video 2</a></li>
+								<li><a href="#">Video 3</a></li>
+								<li><a href="#">Video 4</a></li>
+							</ul>
+						</aside>
+						<footer class="video_footer">
+							<p>Creation at Me</p>
+						</footer>
+					</article>
+				</section>
+				<hr />
+				<section class="col3">
+					<header>
+						<h3>Mein Name mit Canvas</h3>
+					</header>
+					<canvas id="canvasInit" width="350" height="100">
+						<p>Es wird leider nicht das Canvas-Element unterstützt</p>
+					</canvas>
+				</section>
+				<section class="col4">
+					<form class="form">
+						<fieldset>
+							<legend><h4>Video Bestellen</h4></legend>
+								<ul>
+									<li>
+										<label for="name"> Name: 
+											<input type="text" name="name" id="name" size="20" maxlength="30" placeholder="Bitte geben Sie ihren Namen ein">
+										</label>
+									</li>
+									<li>
+										<label for="video">Video: 
+											<input type="text" list="intlist" name="video" id="produkt">
+											<datalist id="intlist">
+												<option value="Video 1">
+												<option value="Video 2">
+												<option value="Video 3">
+												<option value="Video 4">
+											</datalist>
+										</label>
+									</li>
+									<li>
+										<label for="spin">Stückzahl: 
+											<input type="number" min="1" max="150" range="1" name="spin" id="spin" autocomplete="on">
+										</label>
+									</li>
+									<li>
+										<label for="qualitaet"> Qualität:
+											<input type="range" name="qualitaet" id="qualtitaet" placeholder="100">
+										</label>
+										<p class="hint"></p>
+									</li>
+									<FIELDSET class="buttons">
+										<INPUT class="button" name="submit" type="button" value="Absenden" />
+										<INPUT class="button" name="reset" type="reset" value="Eingaben löschen" />
+									</FIELDSET>
+								</ul>
+						
+						</fieldset>
+					</form>
+				</section>
+			</section>
+		</main>
+		
+		<footer id="footer">
+        	<h5 id="rss"><a href="#">RSS Feed</a></h5>
+        	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolorem magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd</p>
+			<ul>
+                <li><a href="sitemap.html" class="first">Sitemap</a> |</li>
+                <li><a href="kontakt.html">Kontakt</a> |</li>
+                <li><a href="impressum.html">Impressum</a></li>
+    		</ul>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
